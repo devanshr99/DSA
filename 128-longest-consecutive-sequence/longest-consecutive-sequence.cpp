@@ -15,15 +15,10 @@ public:
                     count++;
                     curr++;        
         }
-                 
-                     longest=max(longest,count);
+                 longest=max(longest,count);
             }
-            
-           
-        }
-        
-           return longest;
-        
-        }
+    }
+        return longest;
+   }
           
 };
