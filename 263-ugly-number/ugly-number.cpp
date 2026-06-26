@@ -5,7 +5,7 @@ public:
         if(n<1){
             return false;
         }
-        for(long long i=2;i*i<=n;i++){
+        for(long i=2;i*i<=n;i++){
                while(n%i==0){
                    ans.push_back(i);
                    n=n/i;
