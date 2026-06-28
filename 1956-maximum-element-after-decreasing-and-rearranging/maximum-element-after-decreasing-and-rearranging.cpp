@@ -13,7 +13,8 @@ public:
                 arr[i]=arr[i-1]+1;
             }
         }
-        int mx = *max_element(arr.begin(), arr.end());
-        return mx;
+        // (int mx = *max_element(arr.begin(), arr.end());
+        // return mx;(q ki array sort hai phele se to last element max hoga)
+        return arr[arr.size()-1];
     }
 };
