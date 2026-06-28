@@ -9,7 +9,7 @@ public:
               
              
               if(mp.find(need)!=mp.end()){
-                return {mp[need],i};
+                return {mp[need],i};//order mater nhi karta
               }
                mp[nums[i]]=i;
             
