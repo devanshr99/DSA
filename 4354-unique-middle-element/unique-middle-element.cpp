@@ -1,12 +1,10 @@
 class Solution {
 public:
     bool isMiddleElementUnique(vector<int>& nums) {
-        int low=0;
-        int high=nums.size()-1;
-        int mid=low+(high-low)/2;
+        int mid = nums.size() / 2;
         int count=0;
-        for(int low=0;low<=high;low++){
-            if(nums[low]==nums[mid]){
+        for(int i=0;i<nums.size();i++){
+            if(nums[i]==nums[mid]){
                 count++;
             }
         }
