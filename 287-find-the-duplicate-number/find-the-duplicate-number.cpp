@@ -1,26 +1,28 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
+    //     sort(nums.begin(),nums.end());
         
-        int i=0;
-        int j=1;
-        int ans=0;
-        while(j<nums.size()){
-            if(nums[i]==nums[j]){ //time complexity=o(nlog n)
-                return nums[i]; // space complexity-o(1)
-            }                  
+    //     int i=0;
+    //     int j=1;
+    //     int ans=0;
+    //     while(j<nums.size()){
+    //         if(nums[i]==nums[j]){ //time complexity=o(nlog n)
+    //             return nums[i]; // space complexity-o(1)
+    //         }                  
             
-                i++;
-                j++;
-     }
-        return -1;;
-    //     unordered_map<int,int> mp;
+    //             i++;
+    //             j++;
+    //  }
+    //     return -1;;
+        unordered_map<int,int> mp;
+        int ans;
 
-    // for (int x:nums) {
-    // mp[x]++;                   //time complexity=o(n)
-    // if (mp[x] > 1)             //space complexity=o(n)
-    //     return x;
+ for (int x:nums) {
+     mp[x]++;                   //time complexity=o(n)
+     if (mp[x] > 1)             //space complexity=o(n)
+        ans=x;
 }
-    
+return ans;
+    }
 };
