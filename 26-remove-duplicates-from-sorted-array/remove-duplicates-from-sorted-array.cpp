@@ -10,7 +10,7 @@ public:
             i++;
             
         }
-        if(nums[i]!=nums[j]){
+        else{
             nums[k]=nums[j];
             k++;
             i++;
