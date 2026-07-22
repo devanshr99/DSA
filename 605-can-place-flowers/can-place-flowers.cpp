@@ -24,7 +24,7 @@ public:
         while(i<t){
             if(flowerbed[i]==0){
                 if((i==0||flowerbed[i-1]==0)&&(i==t-1||flowerbed[i+1]==0)){
-                    flowerbed[i]=1;
+                    
                     count++;
                     i=i+2;
                 }
