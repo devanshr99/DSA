@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int maxProduct(int n) {
+        vector<int>ans;
+        while(n>0){
+      ans.push_back(n%10);
+      n=n/10;
+        }
+        sort(ans.begin(),ans.end());
+        if(ans.size()==1){
+            return ans[0];
+        }
+        else{
+            return (ans[ans.size()-1]*ans[ans.size()-2]);
+        }
+
+        
+
+        
+    }
+};
