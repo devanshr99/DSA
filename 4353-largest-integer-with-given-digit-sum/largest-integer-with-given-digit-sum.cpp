@@ -13,6 +13,8 @@ int sumdigit(int n){
         if(s==0){
             return 0;
         }
+        if(s > 9 * n)
+            return -1;
        vector<int>digit={9, 99, 999, 9999, 99999};
        for(int j=digit[n-1];j>=1;j--){
             if(sumdigit(j)==s){
