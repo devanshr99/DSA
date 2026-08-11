@@ -9,6 +9,7 @@ public:
             if(n==i){
                 
                 return sum;
+                break;
             }
             a=b;
             b=sum;
