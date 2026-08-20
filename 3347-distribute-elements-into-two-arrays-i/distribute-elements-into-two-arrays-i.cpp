@@ -14,15 +14,11 @@ public:
                 arr2.push_back(nums[i]);
 
             }
-
 }
-vector<int> ans;
+for(int i=0;i<arr2.size();i++){
+            arr1.push_back(arr2[i]);
+        }
+        return arr1;
 
-for(int x : arr1)
-    ans.push_back(x);
-
-for(int x : arr2)
-    ans.push_back(x);
-    return ans;
     }
 };
