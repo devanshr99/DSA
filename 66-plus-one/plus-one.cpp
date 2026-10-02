@@ -1,19 +1,16 @@
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
-       int j=digits.size()-1;
-     
-        while(j>=0&&digits[j]==9){
-            digits[j]=0;
-            j--;
-        }
-        if(j>=0){
-        digits[j]=digits[j]+1;
-       }
-       else {
-                digits.insert(digits.begin(), 1);
-            }
-    
+       
+     for(int i=digits.size()-1;i>=0;i--){
+          if(digits[i]<9){
+            digits[i]=digits[i]+1;
+            return digits;
+          }
+
+          digits[i]=0;
+     }
+     digits.insert(digits.begin(),1);
      return digits;
     }
 };
