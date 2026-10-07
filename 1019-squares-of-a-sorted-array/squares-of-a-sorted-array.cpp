@@ -30,7 +30,7 @@ public:
                 ans.push_back(a[i]*a[i]);
                 i--;
             }
-            while(j<b.size()){
+        while(j<b.size()){
             
                 ans.push_back(b[j]*b[j]);
                 j++;
